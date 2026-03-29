@@ -200,7 +200,7 @@ Third-party open-source libraries (Jetpack Compose, Room, Hilt, Kotlin Coroutine
 
 **tobeamaki.store**
 
-[🌐 Website](https://tobeamaki.store) · [💬 Discord](https://discord.gg/Dqr8Kd8fFP) · [📧 maki@tobeamaki.store](mailto:maki@tobeamaki.store) · [🎵 TikTok @tobeamaki](https://tiktok.com/@tobeamaki)
+[🌐 Website](https://tobeamaki.store) · [💬 Discord](https://discord.gg/VRS2jDn2YT) · [📧 maki@tobeamaki.store](mailto:maki@tobeamaki.store) · [🎵 TikTok @tobeamaki](https://tiktok.com/@tobeamaki)
 
 <img src="assets/mascot.png" width="60" alt="SleepSkr"/>
 
