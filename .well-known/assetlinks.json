@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.taqueur.sommeil",
+    "sha256_cert_fingerprints": [
+      "A9:D0:90:93:D4:19:15:14:44:61:31:AF:C3:2E:93:91:D9:11:A7:9D:CE:7F:DC:52:CB:0D:0D:03:D5:BC:C4:F3"
+    ]
+  }
+}]
