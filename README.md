@@ -15,7 +15,7 @@
 [![License](https://img.shields.io/badge/License-Proprietary-1A1A1A?style=flat-square)](#license)
 [![Version](https://img.shields.io/badge/Version-1.0.20-14F195?style=flat-square)](#)
 
-**[🌐 Website](https://makidevweb3.github.io/SleepSKR/) · [🔒 Privacy Policy](https://makidevweb3.github.io/SleepSKR/privacy-policy.html) · [📋 Copyright](https://makidevweb3.github.io/SleepSKR/copyright.html) · [💬 Discord](https://discord.gg/Dqr8Kd8fFP)**
+**[🌐 Website](https://makidevweb3.github.io/SleepSKR/) · [🔒 Privacy Policy](https://makidevweb3.github.io/SleepSKR/privacy-policy.html) · [📋 Copyright](https://makidevweb3.github.io/SleepSKR/copyright.html) · [💬 Discord](https://discord.gg/VRS2jDn2YT)**
 
 ---
 
