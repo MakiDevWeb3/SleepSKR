@@ -61,7 +61,7 @@ footer a:hover{color:var(--ink)}
       <li>All data is stored locally on your device only — never on a server.</li>
       <li>No account is required. Guest mode is the default.</li>
       <li>Daily content unlocks are computed locally — no server involved.</li>
-      <li>The Solana wallet connection is optional and involves zero transactions.</li>
+      <li>Connecting a Solana wallet is optional. If you choose to donate SOL, that is a real Mainnet transaction you review and approve in your wallet — never automatic.</li>
       <li>You can delete all your data instantly from within the app.</li>
     </ul>
   </div>
@@ -84,12 +84,15 @@ footer a:hover{color:var(--ink)}
   <h2>4. Storage and security</h2>
   <p>Data lives in a local SQLite database managed by Android Room, protected by your device's built-in security model. We have no access to this database and no ability to retrieve it. Uninstalling the app permanently deletes all your data.</p>
 
-  <h2>5. Solana wallet integration</h2>
-  <p>The Solana Mobile wallet connection is <strong>entirely optional</strong>. When used, it does not initiate any blockchain transaction, does not sign any message or transfer tokens, and only reads your public wallet address for display. Any wallet-related data is stored locally on your device only. We are not responsible for the privacy practices of Solana Mobile or any connected wallet application.</p>
+  <h2>5. Solana wallet &amp; donations</h2>
+  <p>The Solana Mobile wallet connection is <strong>entirely optional</strong>. The app works fully without any wallet. When you connect a wallet via <strong>Solana Mobile Wallet Adapter (MWA 2.0)</strong>, only your <strong>public address</strong> is read and stored locally. Your private key is never accessed, transmitted, or stored — it never leaves your wallet app.</p>
+  <p><strong>Donations (new feature):</strong> The Profile screen includes an optional donation feature that lets you send a voluntary SOL tip to the developer. When you tap Donate, the app builds a SOL transfer transaction and forwards it to your wallet app for review. <strong>You approve or reject the transaction inside your wallet before anything is broadcast.</strong> Once signed and sent to Solana Mainnet the transaction is irreversible and publicly visible on the blockchain. The app calls <strong>api.mainnet-beta.solana.com</strong> only to fetch the blockhash needed to construct the transaction — no personal data is sent in this call.</p>
+  <div class="callout"><p>Developer wallet address: <strong>DTgGZkL2EkF9H3w9KTMDS2DAiPETyjeUzkUq52pZxRWs</strong><br>Donation amounts are chosen by you. They are voluntary — no obligation, no minimum, no refund possible due to the nature of blockchain transactions.</p></div>
+  <p>We are not responsible for the privacy practices of <a href="https://solanamobile.com" target="_blank" style="color:var(--ink)">Solana Mobile</a> or any connected wallet application.</p>
 
   <h2>6. Android permissions</h2>
   <p><strong>POST_NOTIFICATIONS</strong> — To send optional sleep reminders at times you configure. No notification data is shared with us.<br>
-  <strong>INTERNET</strong> — Declared in the manifest for potential future features. Not actively used in the current version. No network requests are made.</p>
+  <strong>INTERNET</strong> — Used only when you initiate a donation: one RPC call to <strong>api.mainnet-beta.solana.com</strong> to fetch a blockhash for the transaction. Never used for tracking, analytics, or any background network activity.</p>
 
   <h2>7. Third-party services</h2>
   <p>SleepSkr integrates no third-party analytics, advertising, crash reporting, or tracking services. No SDKs from Google Analytics, Firebase, Facebook, or any equivalent are present in this application.</p>
@@ -105,14 +108,14 @@ footer a:hover{color:var(--ink)}
   · <strong>Portability</strong>: Your CSV export is yours to use freely</p>
 
   <h2>10. Changes to this policy</h2>
-  <p>If significant new features are added (such as optional cloud sync in future versions), this policy will be updated and an in-app notice displayed. The effective date above will be revised accordingly.</p>
+  <p>If significant new features are added that change how data is handled, this policy will be updated and an in-app notice displayed. The effective date above will be revised accordingly. SleepSkr is and remains a local-only application — no cloud sync is planned.</p>
 
   <h2>11. Contact</h2>
   <div class="callout">
     <p><strong><a href="https://tobeamaki.store" style="color:var(--ink)">tobeamaki.store</a></strong><br>
     Email: <a href="mailto:maki@tobeamaki.store" style="color:var(--ink)">maki@tobeamaki.store</a><br>
     Website: <a href="https://tobeamaki.store" style="color:var(--ink)">tobeamaki.store</a><br>
-    Discord: <a href="https://discord.gg/KKtZEPVWBn" style="color:var(--ink)">discord.gg/Dqr8Kd8fFP</a></p>
+    Discord: <a href="https://discord.gg/VRS2jDn2YT" style="color:var(--ink)">discord.gg/VRS2jDn2YT</a></p>
   </div>
 </div>
 <footer>
@@ -121,6 +124,7 @@ footer a:hover{color:var(--ink)}
     <a href="index.html">Home</a>
     <a href="copyright.html">Copyright</a>
     <a href="mailto:maki@tobeamaki.store">Contact</a>
+    <a href="https://discord.gg/VRS2jDn2YT" target="_blank">Discord</a>
   </div>
   <div style="font-weight:400">© 2026 <a href="https://tobeamaki.store">tobeamaki.store</a></div>
 </footer>
