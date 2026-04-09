@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | SleepSkr</title>
+  <meta name="description" content="SleepSkr privacy policy for Android, including permissions, local data storage, and optional wallet use." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="index.html">
+        <img src="mascot.png" alt="SleepSkr logo" />
+        SleepSkr
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="terms.html">Terms</a>
+        <a href="copyright.html">Copyright</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-shell">
+      <div class="shell page">
+        <div class="page-hero">
+          <p class="section-kicker">Privacy Policy</p>
+          <h1>SleepSkr privacy policy</h1>
+          <p class="lede">No ads. No tracking. Sleep data stays on your device. Wallet use is optional, and SleepSkr never receives your private key.</p>
+        </div>
+
+        <section class="section">
+          <div class="grid three">
+            <article class="card">
+              <div class="icon">01</div>
+              <h3>Stored locally</h3>
+              <p>Sleep sessions, settings, reminders, and notes are saved on the device.</p>
+            </article>
+            <article class="card">
+              <div class="icon">02</div>
+              <h3>Not collected</h3>
+              <p>No ads, no analytics, and no personal profile data are collected by the app.</p>
+            </article>
+            <article class="card">
+              <div class="icon">03</div>
+              <h3>Wallet optional</h3>
+              <p>Users can stay in guest mode and use the app without connecting a wallet.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="panel">
+            <p class="section-kicker">Permissions</p>
+            <h2>Android permissions explained in plain English</h2>
+            <ul class="perm-list">
+              <li class="perm">
+                <div class="name">android.permission.ACCESS_NETWORK_STATE <span class="badge warn">Not requested</span></div>
+                <p>Lets an app check whether the device has a network connection. SleepSkr does not need this permission in the current build.</p>
+              </li>
+              <li class="perm">
+                <div class="name">android.permission.INTERNET <span class="badge">Used</span></div>
+                <p>Allows user-started network requests such as wallet or donation calls. It is not used for ads or tracking.</p>
+              </li>
+              <li class="perm">
+                <div class="name">android.permission.RECEIVE_BOOT_COMPLETED <span class="badge">Used</span></div>
+                <p>Lets the app reschedule reminders after a phone restart.</p>
+              </li>
+              <li class="perm">
+                <div class="name">android.permission.SCHEDULE_EXACT_ALARM <span class="badge warn">Not requested</span></div>
+                <p>The current code uses WorkManager for reminders, so exact alarms are not needed in this release.</p>
+              </li>
+              <li class="perm">
+                <div class="name">com.taqueur.sommeil.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION <span class="badge soft">Library</span></div>
+                <p>Internal AndroidX permission used to keep dynamically registered receivers private to the app.</p>
+              </li>
+              <li class="perm">
+                <div class="name">android.permission.FOREGROUND_SERVICE <span class="badge warn">Not requested</span></div>
+                <p>Would be needed only for a visible long-running foreground task. SleepSkr does not run one in the current build.</p>
+              </li>
+              <li class="perm">
+                <div class="name">android.permission.POST_NOTIFICATIONS <span class="badge">Used</span></div>
+                <p>Allows sleep reminders and wake-up notifications. Users can disable notifications in Android settings.</p>
+              </li>
+              <li class="perm">
+                <div class="name">android.permission.REORDER_TASKS <span class="badge warn">Not requested</span></div>
+                <p>Lets an app move tasks in Android's recent-apps list. SleepSkr does not use this feature.</p>
+              </li>
+              <li class="perm">
+                <div class="name">android.permission.WAKE_LOCK <span class="badge">Used</span></div>
+                <p>Helps reminder work continue reliably while the device is asleep or in doze mode.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section two-col">
+          <div class="callout">
+            <p class="section-kicker">Wallet</p>
+            <h2>Optional wallet behavior</h2>
+            <p><strong>Wallet use is optional.</strong> If a user connects a wallet, SleepSkr only reads the public address to display it locally. It does not access a private key, seed phrase, or recovery phrase.</p>
+            <p><strong>Donations are voluntary.</strong> Any blockchain donation is a real transaction the user approves in their own wallet. Blockchain transactions are irreversible once broadcast.</p>
+          </div>
+          <div class="panel">
+            <p class="section-kicker">Data handling</p>
+            <h2>What is stored and what is not</h2>
+            <ul class="feature-list">
+              <li><strong>Local first</strong> Sleep timing, night duration, and user notes remain on the device.</li>
+              <li><strong>No ads</strong> No advertising SDKs or tracking pixels are included.</li>
+              <li><strong>No private keys</strong> Private wallet credentials are never collected or stored.</li>
+              <li><strong>Delete any time</strong> Clearing app data or uninstalling removes locally stored data.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="panel">
+            <p class="section-kicker">Contact</p>
+            <h2>Questions about this policy</h2>
+            <p>Publisher: tobeamaki.store</p>
+            <p>Contact: <a class="subtle-link" href="mailto:maki@tobeamaki.store">maki@tobeamaki.store</a></p>
+            <p>Package: com.taqueur.sommeil</p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="wallet.html">Wallet</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="copyright.html">Copyright</a>
+        </div>
+        <div class="fineprint">SleepSkr - Privacy Policy</div>
+        <div class="fineprint">Last updated: 09/04/2026</div>
+      </div>
+      <div class="fineprint"><a href="mailto:maki@tobeamaki.store">maki@tobeamaki.store</a></div>
+    </div>
+  </footer>
+</body>
+</html>
